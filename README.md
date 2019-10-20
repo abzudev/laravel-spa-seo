@@ -102,7 +102,7 @@ return [
     |
     */
 
-    'cache_lifetime' => env('VUE_CACHE_LIFETIME', 60),
+    'cache_lifetime' => env('SPA_CACHE_LIFETIME', 60),
 
     /*
     |--------------------------------------------------------------------------
