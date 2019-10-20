@@ -1,0 +1,43 @@
+{
+    "name": "abzudev/laravel-spa-seo",
+    "type": "library",
+    "description": "Enhancement for Laravel SPA SEO",
+    "keywords": ["laravel", "spa", "seo"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abzu Development",
+            "email": "jeandrew.swart@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "nesk/puphpeteer": "^1.6",
+        "sunra/php-simple-html-dom-parser": "^1.5"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.8.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Abzudev\\": "src/",
+            "Abzudev\\LaravelSpaSeo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Abzudev\\LaravelSpaSeo\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Abzudev\\LaravelSpaSeo\\SpaSeoServiceProvider"
+            ]
+        }
+    }
+}
